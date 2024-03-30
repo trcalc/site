@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+.spacing {
+  color: #8800ff
+  padding: 50px;
+  display: flex;
+  align-items: left;
+
+  position: sticky;
+  top:0;
+  left:0;
+}
+.gfg{
+  font-size: 40pt;
+}
+
+body{
+  background-color: #404040;
+  color: #80a090;
+  font-family: 'Overpass', sans-serif;
+}
+
+.title{
+  font-size: 5rem;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.gfg{
+  font-size: 18pt;
+}
+
+.tableouter {
+  background-color: black;
+  border: 1px solid white;
+  font-size: 8pt;
+  text-align: left;
+  vertical-align: text-top;
+}
+.table {
+  border: 1px solid white;
+}
+.table2nd {
+  border: 1px solid #404040;
+}
+.tablenone {
+  border: 1px solid black;
+}

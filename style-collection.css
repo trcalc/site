@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+.spacing {
+  color: #8800ff
+  padding: 50px;
+  display: flex;
+  align-items: left;
+
+  position: sticky;
+  top:0;
+  left:0;
+}
+.gfg{
+  font-size: 40pt;
+}
+
+body{
+  background-color: #404040;
+  color: #80a090;
+  font-family: 'Overpass', sans-serif;
+}
+
+.title{
+  font-size: 5rem;
+  text-align: left;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.gfg{
+  font-size: 18pt;
+}
+
+.table-head{
+  font-size: 16pt;
+  text-align: left;
+}
+.table{
+  font-size: 14pt;
+  text-align: left;
+}
+.table-link{
+  color: #8080ff
+}
+
+table, th, td {
+  border: 1px solid white;
+}
+th, td {
+  background-color: black;
+}
+
+.tg  {border-spacing:0;}
+.tg .tg-46ru{background-color:#96fffb;text-align:left;vertical-align:top}
+.tg .tg-7od5{background-color:#9aff99;text-align:left;vertical-align:top}
+.tg .tg-yebb{background-color:#9aff99;font-size:100%;text-align:left;vertical-align:top}
+.tg .tg-sxqf{text-align:left;vertical-align:top}
+.tg .tg-0pky{text-align:left;vertical-align:top}
+.tg .tg-61xu{background-color:#cbcefb;text-align:left;vertical-align:top}
+.tg .tg-pidv{background-color:#ffce93;text-align:left;vertical-align:top}

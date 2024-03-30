@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>TRCALC - Home</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <div class="spacing">
+      <form action="https://chart.trcalc.repl.co/collection.html">
+        <button class="gfg" type="submit">
+            View My Collection
+        </button>
+      </form>
+      <form action="https://chart.trcalc.repl.co/manuals.html">
+        <button class="gfg" type="submit">
+            Calculator Manual Links
+        </button>
+      </form>
+      <form action="https://chart.trcalc.repl.co/othersites.html">
+        <button class="gfg" type="submit">
+            Other Sites
+        </button>
+      </form>
+    </div>
+    <h1 class="my-name"><a id="top">TRCALC</h1>
+    <p class="my-description">A website about newer (American) Texas Instruments scientific calculators</p>
+    <br><br>
+    <p>This site is not affiliated with Texas Instruments and I am not responsible for damage if the tutorials on this page are followed.</p>
+    <br>
+    <div class="ramblings-links">
+      <a class="ramblings-links" href="#contact">Contact</a>
+      <br><br>
+      <a class="ramblings-links" href="#ribbon">Fixing an Aging LCD</a><br>
+      <a class="ramblings-links" href="#backlit34">Backlighting a TI-34 MultiView</a><br>
+      <a class="ramblings-links" href="#calcforen">A Continuation of "Calculator Forensics"</a><br>
+      <a class="ramblings-links" href="#2015">The "Logarithm Bug" and Changes to Standard Models in 2015</a><br>
+      <a class="ramblings-links" href="#school">Design Variations of School AOS Calculators</a><br>
+      <a class="ramblings-links" href="#slrp">TI-30 SLR+ Design Missing From Datamath.org</a><br>
+      <a class="ramblings-links" href="#apd">Automatic Power Down Times</a><br>
+      <a class="ramblings-links" href="#xpbugs">Bugs on the TI-36X Pro</a><br>
+      <a class="ramblings-links" href="#keycombo">Self-Test and Reset Key Combinations</a><br>
+      <a class="ramblings-links" href="#36xpselftest">Logs of Every Function in the Self-Test Mode on my TI-36X Pro</a><br>
+      <!--<a class="ramblings-links" href="#mvdisp">MultiView Display Details & Revision</a><br>-->
+      <!--<a class="ramblings-links" href="#resetdot">reset dot</a><br>-->
+    </div>
+    <br><br><br>
+    <div class="ramblings">
+      <!--ribbon--><div>
+        <h1 class="title"><a id="ribbon">Fixing an Aging LCD</a></h1>
+        <p>Calculators aren't designed to last forever, and often the first thing to go on an aging device is the LCD (liquid crystal display). The specific part causing many display issues is the ribbon cable which connects the main PCB (printed circuit board) to the display PCB. The glue holding down the cable dries out over the decades and begins to shift or come off.<br>
+  <div class="centered-image"><img height="150" src="https://chart.trcalc.repl.co/ribbonheatfix/1.jpg"><img height="150" src="https://chart.trcalc.repl.co/ribbonheatfix/2.jpg"></div><br>
+  This issue may present itself differently depending on the display type, ranging from missing, weak or always active pixels or rows of pixels on a dot matrix display, to missing, weak, always active, or scrambled segments on a segmented display. Fortunately, this issue is quite simple to fix. First you will have to open up the calculator. This varies greatly between calculators, but look carefully for screws to remove or tabs to jam a tool in and release.<br>
+  <div class="centered-image"><img height="200" src="https://chart.trcalc.repl.co/ribbonheatfix/3.jpg"></div><br>
+  Once you have it open, look for the ribbon cable. Generally all you have to do is hold some hot metal down on the cable where it contacts the main PCB. This can be done with the tip of a hot glue gun, which is what I do. You may have to hold it down for a while or move it back and forth, and it may take multiple attempts. Be careful not to damage the surrounding components.<br>
+  <div class="centered-image"><img height="150" src="https://chart.trcalc.repl.co/ribbonheatfix/4.jpg"><img height="150" src="https://chart.trcalc.repl.co/ribbonheatfix/5.jpg"></div></p>
+        01-13-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--backlit34--><div>
+        <h1 class="title"><a id="backlit34">Backlighting a TI-34 MultiView</a></h1>
+        <p>After watching <a class="link" href="https://www.youtube.com/watch?v=J6W1jYoa1HM">Posy's series on LCDs</a>, I decided to make a backlit scientific calculator. I chose one still produced because of the chance of breaking it in the process, and one with an oversized boxy housing because I didn't know how much space I would need inside: the TI-34 MultiView.<br>
+  <div class="centered-image"><img height="250" src="https://chart.trcalc.repl.co/backlit/1.PNG"></div><br>
+  Mine is date code L-0419 B. The disassembly on this one was pretty simple, just remove the 6 outer screws with a small phillips head and pry open the clips. As I expected, there was plenty of room around the display.<br>
+  <div class="centered-image"><img height="200" src="https://chart.trcalc.repl.co/backlit/4.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/5.png"></div><br>
+  I removed this white foam material attaching the LCD to the back of the PCB, in addition to the reflective film on the back of the display, which would make it transparent and allow me to install lights behind it.<br>
+  <div class="centered-image"><img height="200" src="https://chart.trcalc.repl.co/backlit/6.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/7.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/8.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/9.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/10.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/11.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/12.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/13.png"></div><br>
+  There was another, somewhat sticky layer under the reflective film which i scratched a bit and decided to remove completely. I'm not sure in hindsight if this was the best choice but I believe the irregularity helped later with light diffusion.
+  <div class="centered-image"><img height="200" src="https://chart.trcalc.repl.co/backlit/14.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/15.png"></div><br>
+  I decided to put in some white cardstock backing to cover the PCB so the view of the LCD would have a uniform background and make it easier to read.<br>
+  <div class="centered-image"><img height="200" src="https://chart.trcalc.repl.co/backlit/17.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/19.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/20.png"></div><br>
+  Now for the actual lighting part. I used these pre-wired SMD LEDs from Amazon. It probably depends on the model, but I needed them to be very small. I hooked them up to a battery pack I had and tried them in a few different locations around the display to see what looked the best.<br>
+  <div class="centered-image"><img height="200" src="https://chart.trcalc.repl.co/backlit/22.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/24.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/26.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/27.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/29.png"></div><br>
+  Eventually I decided to use three LEDs, one in the center on the top, and one in each of the bottom corners. Now to wire them up to use the calculator's own battery power. I soldered each of the blue LED wires to the B- contact on the display PCB, and the red LED wires to the B+ contact. Make sure to keep the wires already connected in place and to use the battery contacts, not the solar contacts (remember, we want this to work in the dark).<br>
+  <div class="centered-image"><img height="300" src="https://chart.trcalc.repl.co/backlit/33.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/37.png"></div><br>
+  At this point I decided that the light was two concentrated in three spots, so I used radiating blobs of hot glue to try to diffuse it more. There's probably a much better way to do this.<br>
+  <div class="centered-image"><img height="200" src="https://chart.trcalc.repl.co/backlit/38.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/39.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/40.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/41.png"></div><br>
+  Finally, I had to install a switch to turn the light on and off. I'm not sure if there is any simple way to have the backlight automatically turn on and off with the rest of the calculator, but the best I could do with my knowledge at this point was to install a button at the top of the housing. I soldered the button between the B- connection and the blue LED wires. It wasn't pretty, but it's stayed together surprisingly well. I used the hot tip of the soldering iron to melt a hole in the plastic and glued in the connected button. It may take a few tries to get everything in place and close up the calculator. Patience is a virtue. I promise it looks better in person, but I will make another one soon now that I've learned from my mistakes.<br>
+  <div class="centered-image"><img height="200" src="https://chart.trcalc.repl.co/backlit/42.png"><img height="200" src="https://chart.trcalc.repl.co/backlit/43.png"><img height="300" src="https://chart.trcalc.repl.co/backlit/45.png"></div><br>
+  </p>
+        01-14-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--calcforen--><div>
+        <h1 class="title"><a id="calcforen">A Continuation of "Calculator Forensics"</a></h1>
+        <p><a class="link" href="http://www.rskey.org/~mwsebastian/miscprj/forensics.htm">Mike Sebastian's Calculator Forensics project</a> aims to determine the similarities between calculator chips based on <a class="link" href="http://www.rskey.org/~mwsebastian/miscprj/results.htm">the result given when</a> "arcsin (arccos (arctan (tan (cos (sin (9) ) ) ) ) )" is calculated. Here is a table of the results I've gotten from my own collection which align with his table:<br>
+          <table width="100%" align="left">
+            <tr class="table-head">
+              <th>Result</th>
+              <th>Calculator Model</th>
+              <th>Date Code</th>
+            </tr>
+            <tr>
+              <td>9.0000278593</td>
+              <td>TI-30 SLR+</td>
+              <td>RCI 12 89</td>
+            </tr>
+            <tr>
+              <td>8.99999864268</td>
+              <td>Explorer Plus</td>
+              <td>D-0902 B</td>
+            </tr>
+            <tr>
+              <td>9.000003512065</td>
+              <td>TI-34 II</td>
+              <td>(missing, 1999-2004)</td>
+            </tr>
+            <tr>
+              <td>9.00000229461</td>
+              <td>TI-36X Solar</td>
+              <td>N-0601 B</td>
+            </tr>
+            <tr>
+              <td>9.00000229461</td>
+              <td>TI-36X Solar</td>
+              <td>N-0505 B</td>
+            </tr>
+            <tr>
+              <td>9.000001077372</td>
+              <td>TI-36X II</td>
+              <td>N-0403 D</td>
+            </tr>
+            <tr>
+              <td>8.999999007884</td>
+              <td>TI-60X</td>
+              <td>RCI 46 91</td>
+            </tr>
+            <tr>
+              <td>9.00044229369</td>
+              <td>TI-65</td>
+              <td>RCI 18 88</td>
+            </tr>
+            <tr>
+              <td>8.999999007884</td>
+              <td>TI-68</td>
+              <td>RCI 30 96</td>
+            </tr>
+          </table><br>
+        <br>Unfortunately, his site has not been updated in over 15 years, so a lot of newer models are missing from the table. Here is a table of my results which are not present on his table:<br>
+        <table width="100%" align="left">
+            <tr class="table-head">
+              <th>Result</th>
+              <th>Calculator Model</th>
+              <th>Date Code</th>
+            </tr>
+            <tr>
+              <td>9.0000000304418</td>
+              <td>TI-30Xa</td>
+              <td>L-0521 O</td>
+            </tr>
+            <tr>
+              <td>9.0000000304418</td>
+              <td>TI-30X IIS</td>
+              <td>L-0418 P</td>
+            </tr>
+            <tr>
+              <td>9.000001077372</td>
+              <td>TI-34 MultiView</td>
+              <td>L-0419 B</td>
+            </tr>
+            <tr>
+              <td>9.000001077372</td>
+              <td>TI-36X Pro</td>
+              <td>L-1021 E</td>
+            </tr>
+          </table><br>
+        <br>The TI-34 MultiView and TI-36X Pro give the same result as the TI-36X II and TI-30XS MultiView in Mike's table. <a id="forenchange">However, the TI-30Xa and TI-30X IIS in his table give different results from mine. I believe there was a <a class="link" href="#2015">change to these models around 2015</a> which accounts for these results. </p>
+        01-16-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--2015--><div>
+        <h1 class="title"><a id="2015">The "Logarithm Bug" and Changes to Standard Models in 2015</a></h1>
+        <p>Xpanded series calculators (including the 30, 35, and 36 series models) have had the <img height="40" src="DATA-LOGO.jpg"> <a class=link href="http://www.datamath.org/Story/LogarithmBug.htm">"logarithm bug"</a> present since their introduction in 1991, which causes rare incorrect results when calculating certain logarithms and other functions. In addition, all of these models give the same <a class="link" href="#calcforen">calculator forensics</a> result and have the same accuracy of 12 digits. The bug was even <img height="40" src="DATA-LOGO.jpg"> <a class="link" href="http://www.datamath.org/Story/LogarithmBug.htm#Logarithm%20Bug%20-%20Reloaded">carried over onto the II-line series</a> in 1999, but quickly amended. Despite this, the bug persisted inside the last produced Xpanded model, the TI-30Xa, even while its display and housing were altered. Finally, <img height="40" src="DATA-LOGO.jpg"> <a class="link" href="http://www.datamath.org/Sci/Modern/TI-30XA_2015.htm">in 2015, the bug was fixed</a>, and the calculating accuracy (now 14 digits) and forensics result changed alongside it. Even though the bug was not present on it anymore, the last produced II-line model, the TI-30X IIS, also had <a class="link" href="#forenchange">its forensics result changed</a> at the same time.</p>
+        01-24-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--school--><div>
+        <h1 class="title"><a id="school">Design Variations of School AOS Calculators</a></h1>
+        <p>There are 4 models of AOS calculators which used a similar series of housings from the late 1980s to early 2000s, the Math Explorer, the Explorer Plus, the TI-30Xa SE, and the TI-34. By scrolling through eBay listings, I've put together this chart to illustrate which of these models used which housing designs when. For image context, take a look at <img height="40" src="DATA-LOGO.jpg"> <a class=link href="http://www.datamath.org/Sci/Modern/MathExplorer_87.htm">this page</a> and <img height="40" src="DATA-LOGO.jpg"> <a class=link href="http://www.datamath.org/Sci/Modern/TI-34_5.htm">this page</a>.</p>
+        <table width="100%" align="left">
+          <tr class="table-head">
+            <th>Model Name</th>
+            <th>Date Range</th>
+            <th>Housing Design</th>
+            <th>Bezel Design</th>
+            <th>Solar Panel Size</th>
+            <th>Location of TI Logo</th>
+            <th>Key Design</th>
+            <th>Location of Main Text on Keys</th>
+          </tr>
+          <tr>
+            <td>Math Explorer</td>
+            <td></td>
+            <td>Boxy</td>
+            <td>Smooth</td>
+            <td>Large</td>
+            <td>Bottom Left</td>
+            <td>Lower Bump</td>
+            <td>Bottom Left</td>
+          </tr>
+          <tr>
+            <td>Math Explorer</td>
+            <td>0790-1291</td>
+            <td>Boxy</td>
+            <td>Smooth</td>
+            <td>Large</td>
+            <td>Right of Text</td>
+            <td>Lower Bump</td>
+            <td>Top Left</td>
+          </tr>
+          <tr>
+            <td>Math Explorer</td>
+            <td>0791-0297</td>
+            <td>Boxy</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Right of Text</td>
+            <td>Lower Bump</td>
+            <td>Top Left</td>
+          </tr>
+          <tr>
+            <td>Math Explorer</td>
+            <td>011294-160994</td>
+            <td>Boxy</td>
+            <td>Bordered</td>
+            <td>Medium</td>
+            <td>Left of Text</td>
+            <td>Smooth</td>
+            <td>Top Left</td>
+          </tr>
+          <tr>
+            <td>Math Explorer</td>
+            <td>0597-0107</td>
+            <td>Round</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Top Left</td>
+            <td>Round</td>
+            <td>Center</td>
+          </tr>
+          <tr>
+            <td>Explorer Plus</td>
+            <td>070296-200596-200996-310796-240198</td>
+            <td>Boxy</td>
+            <td>Bordered</td>
+            <td>Medium</td>
+            <td>Left of Text</td>
+            <td>Smooth</td>
+            <td>Center</td>
+          </tr>
+          <tr>
+            <td>Explorer Plus</td>
+            <td>0197</td>
+            <td>Boxy</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Left of Text</td>
+            <td>Smooth</td>
+            <td>Center</td>
+          </tr>
+          <tr>
+            <td>Explorer Plus</td>
+            <td>0998-0902</td>
+            <td>Round</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Top Left</td>
+            <td>Round</td>
+            <td>Center</td>
+          </tr>
+          <tr>
+            <td>TI-30Xa SE</td>
+            <td>0495-0895</td>
+            <td>Boxy</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Left of Text</td>
+            <td>Smooth</td>
+            <td>Center</td>
+          </tr>
+          <tr>
+            <td>TI-30Xa SE</td>
+            <td></td>
+            <td>Round</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Top Left</td>
+            <td>Round</td>
+            <td>Center</td>
+          </tr>
+          <tr>
+            <td>TI-34</td>
+            <td>0889-1291</td>
+            <td>Boxy</td>
+            <td>Grooved</td>
+            <td>Large</td>
+            <td>Right of Text</td>
+            <td>Lower Bump (Red)</td>
+            <td>Bottom Left</td>
+          </tr>
+          <tr>
+            <td>TI-34</td>
+            <td>0990-0491</td>
+            <td>Boxy</td>
+            <td>Grooved</td>
+            <td>Large</td>
+            <td>Right of Text</td>
+            <td>Lower Bump (Blue)</td>
+            <td>Bottom Left</td>
+          </tr>
+          <tr>
+            <td>TI-34</td>
+            <td>0192-0892</td>
+            <td>Boxy</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Right of Text</td>
+            <td>Lower Bump (Blue)</td>
+            <td>Bottom Left</td>
+          </tr>
+          <tr>
+            <td>TI-34</td>
+            <td>0892-0397</td>
+            <td>Boxy</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Right of Text</td>
+            <td>Lower Bump (Red)</td>
+            <td>Bottom Left</td>
+          </tr>
+          <tr>
+            <td>TI-34</td>
+            <td>100294-100894-150494-180694-211294-221294-260695-310895-220196</td>
+            <td>Boxy</td>
+            <td>Bordered</td>
+            <td>Medium</td>
+            <td>Left of Text</td>
+            <td>Smooth (Red)</td>
+            <td>Bottom Left</td>
+          </tr>
+          <tr>
+            <td>TI-34</td>
+            <td>0197</td>
+            <td>Boxy</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Left of Text</td>
+            <td>Smooth (Red)</td>
+            <td>Center</td>
+          </tr>
+          <tr>
+            <td>TI-34</td>
+            <td>0697-1102</td>
+            <td>Round</td>
+            <td>Smooth</td>
+            <td>Small</td>
+            <td>Top Left</td>
+            <td>Round (Red, Modifier Colors Swapped)</td>
+            <td>Center</td>
+          </tr>
+        </table><br>
+        <br>01-18-23 - 01-20-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--slrp--><div>
+        <h1 class="title"><a id="slrp">TI-30 SLR+ Design Missing From Datamath.org</a></h1>
+        <p><img height="40" src="DATA-LOGO.jpg"> The <a class="link" href="datamath.org">Datamath Calculator Museum</a> is a wonderful website with images and descriptions of nearly every TI calculator ever made. However, there are a few minor designs they failed to list. One of them I own myself. Here is an excerpt from an email I sent:<br>
+  <blockquote>You have five TI-30 Solar Plus calculators in your overview. One has the early solar design from the TI-30 SLR, the second has a later design with yellow colored text on the INV keys and an "embedded" display, the third is a prototype with a black bezel and no special coloring on INV keys, the fourth has a "window" covering the display and solar cells with a gray bezel but no special coloring on INV keys, and the last has a more "shallow" display with smaller solar cells and no special coloring on the INV keys.<br><br>
+  However, while browsing these on eBay, I came across several calculators of another design you do not have listed. These have the "window" and the gray bezel from the fourth design, but with yellow text on the INV keys, known from the second design.<br><br>
+  I am planning to buy one of these soon, but for now here are some images I found attached to the listings on eBay that could help solve this. I believe the date code seen here is RCI 14 89 but it is difficult to read.</blockquote>
+  I purchased one calculator of this design, with date code RCI 12 89, placing it somewhere between <img height="40" src="DATA-LOGO.jpg"><a class="link" href="http://www.datamath.org/Sci/Modern/TI-30SLR_PLUS_2000.htm#designs">type 3 and type 4</a>.<br><br><img height="150" src="https://chart.trcalc.repl.co/30slrplus/1.jpg"><img height="150" src="https://chart.trcalc.repl.co/30slrplus/2.jpg"><img height="150" src="https://chart.trcalc.repl.co/30slrplus/3.jpg"><img height="150" src="https://chart.trcalc.repl.co/30slrplus/4.jpg"><img height="150" src="https://chart.trcalc.repl.co/30slrplus/5.jpg"><img height="150" src="https://chart.trcalc.repl.co/30slrplus/6.jpg"><img height="150" src="https://chart.trcalc.repl.co/30slrplus/7.jpg"></p>
+        01-13-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--apd--><div>
+        <h1 class="title"><a id="apd">Automatic Power Down Times</a></h1>
+        <p>Every TI calculator with batteries (including dual power models) has the Automatic Power Down (APD) feature which turns off the calculator on its own after a certain amount of time with no key presses. Turning it back on returns to the exact same state as when it shut off. How long is this time and how does it vary between models? Let's see. I did two trials each to see if it was consistent, and in a different mode too. It may be affected by battery condition.</p><br>
+        <table width="100%" align="left">
+            <tr class="table-head">
+              <th>Calculator Model</th>
+              <th>Date Code</th>
+              <th>Trial 1 (±0:05)</th>
+              <th>Trial 2 (±0:05, in stat mode)</th>
+            </tr>
+            <tr>
+              <td>TI-15</td>
+              <td>K-0207</td>
+              <td>4:30</td>
+              <td>4:30 (in problem solving mode)</td>
+            </tr>
+            <tr>
+              <td>TI-30Xa</td>
+              <td>L-0521 O</td>
+              <td>5:05</td>
+              <td>5:05</td>
+            </tr>
+            <tr>
+              <td>TI-30X IIS</td>
+              <td>L-0418 P</td>
+              <td>5:10</td>
+              <td>5:10</td>
+            </tr>
+            <tr>
+              <td>TI-34 II</td>
+              <td>missing, 1999-2004</td>
+              <td>5:15</td>
+              <td>5:15</td>
+            </tr>
+            <tr>
+              <td>TI-34 MultiView</td>
+              <td>L-0419 B</td>
+              <td>4:00</td>
+              <td>4:05 (with backlight on)</td>
+            </tr>
+            <tr>
+              <td>TI-36X II</td>
+              <td>N-0403 D</td>
+              <td>4:45</td>
+              <td>4:45</td>
+            </tr>
+            <tr>
+              <td>TI-36X Pro</td>
+              <td>L-1021 E</td>
+              <td>3:55</td>
+              <td>3:55</td>
+            </tr>
+            <tr>
+              <td>TI-60X</td>
+              <td>RCI 46 91</td>
+              <td>16:20</td>
+              <td>17:35</td>
+            </tr>
+            <tr>
+              <td>TI-65</td>
+              <td>RCI 18 88</td>
+              <td>21:20</td>
+              <td>21:20</td>
+            </tr>
+            <tr>
+              <td>TI-68</td>
+              <td>RCI 30 96</td>
+              <td>6:35</td>
+              <td>6:35</td>
+            </tr>
+          </table><br>
+        <p></p><br>
+        01-16-23 - 01-18-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--xpbugs--><div>
+        <h1 class="title"><a id="xpbugs">Bugs on the TI-36X Pro</a></h1>
+        <p>The TI-36X Pro has the most advanced operating system of any TI scientific calculator, and with these great capabilities come a few bugs. The first has been common knowledge for a while now, and the second I recently discovered myself.<br>
+  First, the mixed fractions with pi bug. Press this key sequence in MathPrint mode. To prepare the calculator to produce the bug, convert a decimal to a mixed fraction using the > n/d <> U n/d function in the math menu. Then multiply pi by a squared decimal. Finally, hit the quick convert key (above enter) to convert it into an (incorrect) mixed fraction with pi in the numerator. <a class="link" href="https://youtu.be/zVi2Ldu4IuE">This video has a good demonstration.</a> This <a class="link" href="https://www.reddit.com/r/calculators/comments/xbq6wu/has_ti_fixed_the_ti36x_pro_bugs/io0v92r/?context=3">bug depends on the "smart" quick convert key.</a><br>
+  For the second bug, understand that most characters on the calculator have three sizes, one for standard home screen use (5 by 7 pixels), one for use in small MathPrint boxes (5 by 5 pixels) and one for use in small text screens, like the mode and table menus (4 by 5 pixels). It generally works out fine, except when you use certain conversions, in particular ones using the W for watts and the J for joules, in a small MathPrint box, like in an exponent or a fraction.<br>
+  <div class="centered-image"><img height="150" src="https://chart.trcalc.repl.co/36xpmybug/1.png"><img height="150" src="https://chart.trcalc.repl.co/36xpmybug/2.png"><img height="150" src="https://chart.trcalc.repl.co/36xpmybug/3.png"></div><br>
+  This is present on my calculator (L-1021 E) and <a class="link" href="https://tiplanet.org/forum/viewtopic.php?f=26&t=25995">Critor's</a> (L-0317 B).</p>
+        01-13-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--keycombo--><div>
+        <h1 class="title"><a id="keycombo">Self-Test and Reset Key Combinations</a></h1>
+        <p>Many calculators have combinations of keys which can be pressed in order to perform special functions like resets and self-tests. These differ from model to model and there are likely many which are still unknown. TI doesn't give out self-test sequences in manuals so often they have to be figured out.<br>
+  We will start with reset sequences, which, on calculators with batteries, usually consist of holding down two distant keys simultaneously. First, on modern EOS calculators (TI-10, TI-15, II line series, MultiView series), hold down the on and clear keys at the same time. This will display a "memory cleared" screen and reset all memory and settings.<br>
+  <div class="centered-image"><img height="150" src="https://chart.trcalc.repl.co/keycombo/15.png"><img height="150" src="https://chart.trcalc.repl.co/keycombo/30xiis.png"><img height="150" src="https://chart.trcalc.repl.co/keycombo/36xp.png"></div><br>
+  On the MultiView series, if the clear key is pressed before and released after the on key, the message will be immediately cleared rather than requiring another keystroke to clear. On the TI-65 Technical Analyst, a keystroke programmable calculator from the 1980s, the calculator's full memory and settings can be cleared by first turning it off, then holding R/S as you turn it back on.<br>
+  <div class="centered-image"><img height="150" src="https://chart.trcalc.repl.co/keycombo/65.png"></div><br>
+  A pattern of segments will flash, and then it will return to normal operation.<br>
+  I am only aware of two self-test functions on scientific calculators. The first is on solar-only models of the Xpanded series (TI-30X Solar, TI-30Xa Solar, TI-36X Solar). <a class="link" href="http://www.rskey.org/~mwsebastian/selftest/ti_test.htm#tisolar">This test</a> is performed by holding down the fraction, 1, 2, and 3 keys and pressing ON. Two display patterns alternate either automatically or by pressing any key.<br>
+  <div class="centered-image"><img height="150" src="https://chart.trcalc.repl.co/keycombo/36xs1.png"><img height="150" src="https://chart.trcalc.repl.co/keycombo/36xs2.png"></div><br>
+  The calculator returns to normal operation when ON is pressed again. I plan to eventually try this on the <img height="40" src="DATA-LOGO.jpg"><a class="link" href="http://www.datamath.org/Sci/Modern/TI-30XA_SE2.htm">TI-30Xa SE</a>.<br>
+  <a id="mvst">Another self-test function exists on the MultiView series. It is performed with the sequence [2nd](reset)[2nd](insert)[on]. Some diagnostic information is displayed, and pressing different keys from this point will perform various tests. Read more about the specifics of this function <a class="link" href="https://tiplanet.org/forum/viewtopic.php?p=269754&sid=b656abf510a95007246f005073f5d1a5#p269754">here</a>. I have logged some of my own results below.<br>
+  It is very likely that a self-test function exists on the II line series, but it not been discovered.</p>
+        01-14-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--36xpselftest--><div>
+        <h1 class="title"><a id="36xpselftest">MultiView self test logs</a></h1>
+        <p>
+  How to access is described above<br>
+  Using RownumberColumnnumber key codes<br>
+  TI-36X Pro (L-1021 E)<br>
+  11 92 11 13 91: displays JT5CW8-002 11/10 (point A)<br>
+  from point A:<br>
+  11 or 12 or 13 or 15 or 22 or 23: blanks screen, resumes normal operation except for direct input (modifiers & menus work, enter shows cursor)<br>
+  14 or 21 or 32 or 33 or 34 or 35: displays MEMORY CLEARED, memory cleared, resumes normal operation<br>
+  16 or 31 or 42 or 43 or 44 or 45: displays 2 rapidly alternating display tests, two screens of columns and sections of indicators, only 35+91 can be pressed to skip the test, otherwise continues for about 90 seconds, displays MEMORY CLEARED, memory cleared, resumes normal operation<br>
+  24 or 41 or 52 or 53 or 54 or 55: (point B, direct to respective key index)<br>
+  51 or 61 or 62 or 63 or 64 or 65 or 72 or 81 or 91 or 92 or 93 or 94 or 95: no immediately visible change (investigate for contrast changes)<br>
+  71 or 82 or 83 or 84 or 85: scrolls through 6 display tests (point C)<br>
+  After about 4 minutes displays MEMORY CLEARED, memory cleared, resumes normal operation
+  <br>
+  from point B:<br>
+  11: 0F XX XXXX (point B, see note B)<br>
+  12: 27 XX XXXX (point B, see note B)<br>
+  13: 2F XX XXXX (point B, see note B)<br>
+  14: 36 XX XXXX (point B, see note B)<br>
+  15: 37 XX XXXX (point B, see note B)<br>
+  16: 35 XX XXXX (point B, see note B)<br>
+  21: 0E XX XXXX (point B, see note B)<br>
+  22: 17 XX XXXX (point B, see note B)<br>
+  23: 1F XX XXXX (point B, see note B)<br>
+  24: 34 XX XXXX (point B, see note B)<br>
+  31: 0D XX XXXX (point B, see note B)<br>
+  32: 16 XX XXXX (point B, see note B)<br>
+  33: 1E XX XXXX (point B, see note B)<br>
+  34: 26 XX XXXX (point B, see note B)<br>
+  35: 2E XX XXXX (point B, see note B)<br>
+  41: 0C XX XXXX (point B, see note B)<br>
+  42: 15 XX XXXX (point B, see note B)<br>
+  43: 1D XX XXXX (point B, see note B)<br>
+  44: 25 XX XXXX (point B, see note B)<br>
+  45: 2D XX XXXX (point B, see note B)<br>
+  51: 0B XX XXXX (point B, see note B)<br>
+  52: 14 XX XXXX (point B, see note B)<br>
+  53: 1C XX XXXX (point B, see note B)<br>
+  54: 24 XX XXXX (point B, see note B)<br>
+  55: 2C XX XXXX (point B, see note B)<br>
+  61: 0A XX XXXX (point B, see note B)<br>
+  62: 13 XX XXXX (point B, see note B)<br>
+  63: 1B XX XXXX (point B, see note B)<br>
+  64: 23 XX XXXX (point B, see note B)<br>
+  65: 2B XX XXXX (point B, see note B)<br>
+  71: 09 XX XXXX (point B, see note B)<br>
+  72: 12 XX XXXX (point B, see note B)<br>
+  73: 1A XX XXXX (point B, see note B)<br>
+  74: 22 XX XXXX (point B, see note B)<br>
+  75: 2A XX XXXX (point B, see note B)<br>
+  81: 08 XX XXXX (point B, see note B)<br>
+  82: 11 XX XXXX (point B, see note B)<br>
+  83: 19 XX XXXX (point B, see note B)<br>
+  84: 21 XX XXXX (point B, see note B)<br>
+  85: 29 XX XXXX (point B, see note B)<br>
+  91: point A<br>
+  92: 10 XX XXXX (point B, see note B)<br>
+  93: 18 XX XXXX (point B, see note B)<br>
+  94: 20 XX XXXX (point B, see note B)<br>
+  95: 28 XX XXXX (point B, see note B)<br>
+  After about 4 minutes displays MEMORY CLEARED, memory cleared, resumes normal operation
+  <br>
+  note B: first two characters give a two-character alphanumeric code for the key pressed, second two count the number of keys pressed (starting with 01, rolls over 99 to 00), third set of four seems to increment using some other counting system<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  </p>
+        01-13-23 - 01-16-23<br><a class="link" href="#top">Return to top</a>
+      </div>
+      <!--mvdisp--><div>
+        <!--<h1 class="title"><a id="mvdisp">MultiView Display Details & Revision</a></h1>
+        <p>It is known from looking at the display at full contrast that all MultiView calculators use the same display (even the French ones), despite many extra indicators on each model going unused. It is also known, from the <a class="link" href=#mvst>self test function</a>, that every character in all the indicators can be activated separately, unlike most other calculators.<br>
+  <div class="centered"><img height="200" src="mvdisprev/full.jpg"></div><br>
+  Shown here are both of my MultiView calculators, a TI-34 MultiView with date code L-0419 B, and a TI-36X Pro with date code L-1021 E. The 34 is on top and the 36 on the bottom.<br>
+  <div class="centered"><img height="200" src="mvdisprev/zoom.jpg"></div><br>
+  Note that both have the same indicators despite some (like the E after 2ND and the K after FIX) never used in normal operation on either of them. But also notice a slight difference. The newer display's indicator row, on the TI-36X Pro, has larger text, is aligned to the bottom instead of the top, is bold instead of italicized, has HBO instead of HEXOCT, and has thick arrowheads instead of thin arrows. I assume this was done to improve visibility, but I'm not sure if the older TI-36X Pro could display BIN or had that functionality at all. I will have to try to get my hands on one and test this. The change was made some time between April 2019 and October 2021. I have been updating these dates as I see more examples.</p>
+        01-14-23<br><a class="link" href="#top">Return to top</a>-->
+      </div>
+      <!--resetdot--><div>
+        <!--<h1 class="title"><a id="resetdot">reset dots</a></h1>
+        <p></p>
+        <a class="link" href="#top">Return to top</a>-->
+      </div>
+    </div>
+    <br><br><br>
+    <div class="contact">
+      <p><a id="contact">Contact: </p>
+      <a href="https://www.discord.com/users/tryt#2407" target="_blank"><img class=contact-img src="https://media.discordapp.net/attachments/862482097649745942/987494002821562448/discord_icon-1.png"/></a>
+      <a href="mailto:trainrideryt@gmail.com" target="_blank"><img class=contact-img src="https://images-ext-2.discordapp.net/external/i6WJ-cQBRpI97kwq9v32pMCAKzdg-x2QI5Ea18tJ75g/http/assets.stickpng.com/images/5847fafdcef1014c0b5e48ce.png?width=566&height=429"/></a>
+    </div>
+  </body>
+</html>
